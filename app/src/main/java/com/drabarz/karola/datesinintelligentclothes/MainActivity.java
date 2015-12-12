@@ -14,10 +14,10 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.informationButton).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.findLoverButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(findViewById(R.id.mainLayout), R.string.information, Snackbar.LENGTH_LONG).show();
+                Snackbar.make(findViewById(R.id.mainLayout), R.string.findLoverInformation, Snackbar.LENGTH_LONG).show();
             }
         });
 
