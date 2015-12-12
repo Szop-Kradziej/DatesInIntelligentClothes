@@ -4,6 +4,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.support.design.widget.Snackbar;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +14,15 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        findViewById(R.id.informationButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(findViewById(R.id.mainLayout), R.string.information, Snackbar.LENGTH_LONG).show();
+            }
+        });
+
+
+
     }
 
     @Override

@@ -3,4 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="information_button">Info</string>
+    <string name="information">Choose one of options</string>
 </resources>
