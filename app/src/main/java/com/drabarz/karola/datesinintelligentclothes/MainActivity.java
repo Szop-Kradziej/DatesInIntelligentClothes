@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.findLoverButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(findViewById(R.id.mainLayout), R.string.findLoverInformation, Snackbar.LENGTH_LONG).show();
+                Snackbar.make(findViewById(R.id.mainLayout), R.string.find_lover_information, Snackbar.LENGTH_LONG).show();
             }
         });
 

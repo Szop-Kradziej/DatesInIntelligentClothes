@@ -22,13 +22,13 @@
                 android:id="@+id/noLoversTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/noDate"/>
+                android:text="@string/no_date"/>
 
             <TextView
                 android:id="@+id/findDateTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/findDate"/>
+                android:text="@string/find_date"/>
 
         </LinearLayout>
 

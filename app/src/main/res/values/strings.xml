@@ -5,7 +5,12 @@
     <string name="action_settings">Settings</string>
 
     <string name="information_button">Info</string>
-    <string name="noDate">You do\'t have any date for today.</string>
-    <string name="findDate">Let\'s find date!</string>
-    <string name="findLoverInformation">I\'m searching for your lover!</string>
+    <string name="no_date">You do\'t have any date for today.</string>
+    <string name="find_date">Let\'s find date!</string>
+    <string name="find_lover_information">I\'m searching for your lover!</string>
+
+    <string name="today_dates">Today dates</string>
+    <string name="update_look">Update my look</string>
+    <string name="update_preferences">Update my preferences</string>
+    <string name="profile_information">Profile</string>
 </resources>

@@ -4,45 +4,34 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/inbox"
+            android:id="@+id/todayDatesItem"
             android:checked="false"
-            android:icon="@android:drawable/ic_dialog_info"
-            android:title="string/inbox_string" />
+            android:icon="@drawable/calendar_clock"
+            android:title="@string/today_dates" />
 
         <item
-            android:id="@+id/starred"
+            android:id="@+id/findDateItem"
             android:checked="false"
-            android:icon="@android:drawable/ic_dialog_info"
-            android:title="string/starred_string" />
+            android:icon="@drawable/heart"
+            android:title="@string/find_date" />
 
         <item
-            android:id="@+id/sent_mail"
+            android:id="@+id/updateLookItem"
             android:checked="false"
-            android:icon="@android:drawable/ic_dialog_info"
-            android:title="string/sent_mail_string" />
+            android:icon="@drawable/arrow_up_bold_circle"
+            android:title="@string/update_look" />
 
         <item
-            android:id="@+id/drafts"
+            android:id="@+id/updatePreferences"
             android:checked="false"
-            android:icon="@android:drawable/ic_delete"
-            android:title="string/draft_string" />
+            android:icon="@drawable/arrow_up_bold_circle"
+            android:title="@string/update_preferences" />
 
-
         <item
-            android:id="@+id/allmail"
+            android:id="@+id/profileInformation"
             android:checked="false"
-            android:icon="@android:drawable/ic_delete"
-            android:title="string/all_mail_string" />
-        <item
-            android:id="@+id/trash"
-            android:checked="false"
-            android:icon="@android:drawable/ic_delete"
-            android:title="string/trash_string" />
-        <item
-            android:id="@+id/spam"
-            android:checked="false"
-            android:icon="@android:drawable/ic_btn_speak_now"
-            android:title="string/spam_string" />
+            android:icon="@drawable/clipboard_account"
+            android:title="@string/profile_information" />
 
     </group>
 </menu>
