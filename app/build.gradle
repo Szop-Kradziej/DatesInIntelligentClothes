@@ -24,4 +24,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
     compile 'de.hdodenhof:circleimageview:1.2.1'
+    //compile 'com.github.yukuku:ambilwarna:2.0.1'
+    compile 'com.rarepebble:colorpicker:1.5.1'
+  //  compile 'com.github.martin-stone:hsv-alpha-color-picker-android:1.5.1'
 }

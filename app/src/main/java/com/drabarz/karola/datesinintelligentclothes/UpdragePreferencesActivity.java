@@ -1,9 +1,14 @@
 package com.drabarz.karola.datesinintelligentclothes;
 
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+import com.rarepebble.colorpicker.ColorPickerView;
 
 
 public class UpdragePreferencesActivity extends ActionBarActivity {
@@ -12,6 +17,37 @@ public class UpdragePreferencesActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_updrage_preferences);
+
+        addListenersToPriorityColorButtons();
+    }
+
+    void addListenersToPriorityColorButtons() {
+        Button upgradePreferencesPriorityOneButton = (Button) findViewById(R.id.upgradePreferencesPriorityOneButton);
+        addListenerToPriorityColorButton(upgradePreferencesPriorityOneButton);
+        Button upgradePreferencesPriorityTwoButton = (Button) findViewById(R.id.upgradePreferencesPriorityTwoButton);
+        addListenerToPriorityColorButton(upgradePreferencesPriorityTwoButton);
+        Button upgradePreferencesPriorityThreeButton = (Button) findViewById(R.id.upgradePreferencesPriorityThreeButton);
+        addListenerToPriorityColorButton(upgradePreferencesPriorityThreeButton);
+        Button upgradePreferencesPriorityFourButton = (Button) findViewById(R.id.upgradePreferencesPriorityFourButton);
+        addListenerToPriorityColorButton(upgradePreferencesPriorityFourButton);
+        Button upgradePreferencesPriorityFiveButton = (Button) findViewById(R.id.upgradePreferencesPriorityFiveButton);
+        addListenerToPriorityColorButton(upgradePreferencesPriorityFiveButton);
+    }
+
+    void addListenerToPriorityColorButton(final Button button) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setPaleteColor(button);
+            }
+        });
+    }
+
+    void setPaleteColor(Button button) {
+        int color;
+        ColorPickerView colorPickerView = (ColorPickerView) findViewById(R.id.colorPicker);
+        color = colorPickerView.getColor();
+        button.setBackgroundColor(color);
     }
 
     @Override
