@@ -9,12 +9,29 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".TodayDateActivity"
+            android:label="@string/title_activity_today_date" >
+        </activity>
+        <activity
+            android:name=".UpdragePreferencesActivity"
+            android:label="@string/title_activity_updrage_preferences" >
+        </activity>
+        <activity
+            android:name=".UpgradeLookActivity"
+            android:label="@string/title_activity_upgrade_look" >
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile" >
         </activity>
     </application>
 
