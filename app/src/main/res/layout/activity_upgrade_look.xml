@@ -1,12 +1,72 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.drabarz.karola.datesinintelligentclothes.UpgradeLookActivity">
+    tools:context="com.drabarz.karola.datesinintelligentclothes.UpgradeLookActivity"
+    android:orientation="vertical">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <ImageView
+           android:layout_width="0sp"
+           android:layout_height="match_parent"
+           android:layout_weight="3"
+           android:background="@color/lightBlue"
+           android:src="@drawable/heart"/>
+
+       <LinearLayout
+           android:layout_width="0sp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/heart"
+               android:id="@+id/circlePriorityOneView"
+               />
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/heart"
+               android:id="@+id/circlePriorityTwoView"
+               />
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/heart"
+               android:id="@+id/circlePriorityThreeView"
+               />
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/heart"
+               android:id="@+id/circlePriorityFourView"
+               />
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/heart"
+               android:id="@+id/circlePriorityFiveView"
+               />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/upgradeLookSaveChanges"
+        android:text="@string/save_changes"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-</RelativeLayout>
+</LinearLayout>
