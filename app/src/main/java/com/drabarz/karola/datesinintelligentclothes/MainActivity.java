@@ -1,5 +1,6 @@
 package com.drabarz.karola.datesinintelligentclothes;
 
+import android.support.design.widget.NavigationView;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,8 +9,7 @@ import android.view.MenuItem;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +22,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navigationView);
+        navigationView.setNavigationItemSelectedListener(this);
+    }
 
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
 
+        if(item.getItemId() == R.id.todayDatesItem){
+            Snackbar.make(findViewById(R.id.mainLayout), R.string.today_dates, Snackbar.LENGTH_LONG).show();
+            return true;
+        }
+        if(item.getItemId() == R.id.findDateItem){
+            Snackbar.make(findViewById(R.id.mainLayout), R.string.find_date, Snackbar.LENGTH_LONG).show();
+            return true;
+        }
+        if(item.getItemId() == R.id.updateLookItem){
+            Snackbar.make(findViewById(R.id.mainLayout), R.string.update_look, Snackbar.LENGTH_LONG).show();
+            return true;
+        }
+        if(item.getItemId() == R.id.updatePreferencesItem){
+            Snackbar.make(findViewById(R.id.mainLayout), R.string.update_preferences, Snackbar.LENGTH_LONG).show();
+            return true;
+        }
+        if(item.getItemId() == R.id.profileInformationItem){
+            Snackbar.make(findViewById(R.id.mainLayout), R.string.profile_information, Snackbar.LENGTH_LONG).show();
+            return true;
+        }
+
+        return false;
     }
 
     @Override

@@ -22,13 +22,13 @@
             android:title="@string/update_look" />
 
         <item
-            android:id="@+id/updatePreferences"
+            android:id="@+id/updatePreferencesItem"
             android:checked="false"
             android:icon="@drawable/arrow_up_bold_circle"
             android:title="@string/update_preferences" />
 
         <item
-            android:id="@+id/profileInformation"
+            android:id="@+id/profileInformationItem"
             android:checked="false"
             android:icon="@drawable/clipboard_account"
             android:title="@string/profile_information" />
