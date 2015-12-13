@@ -14,10 +14,22 @@
     <string name="update_preferences">Update my preferences</string>
     <string name="profile_information">Profile</string>
 
+    <string name="save_changes">SAVE CHANGES</string>
+    <string name="changes_saved">Changes saved successfully.</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
     <string name="title_activity_today_date">TodayDateActivity</string>
     <string name="title_activity_updrage_preferences">UpdragePreferencesActivity</string>
     <string name="title_activity_upgrade_look">UpgradeLookActivity</string>
     <string name="title_activity_profile">ProfileActivity</string>
+
+    <string name="profile_activity_nickname">Nickname:</string>
+    <string name="profile_activity_gender">Gender:</string>
+    <string name="profile_activity_age">Age:</string>
+    <string name="profile_activity_location">Location:</string>
+    <string name="profile_activity_location_lattitude">Lattitude:</string>
+    <string name="profile_activity_location_longitude">Longitude:</string>
+    <string name="profile_activity_size">Size:</string>
 </resources>

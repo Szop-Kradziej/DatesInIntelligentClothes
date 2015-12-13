@@ -12,7 +12,11 @@ import android.view.MenuItem;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 
+import com.drabarz.karola.datesinintelligentclothes.model.Model;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
+    Model model = new Model();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
