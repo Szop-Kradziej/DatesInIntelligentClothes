@@ -6,12 +6,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class TodayDateActivity extends ActionBarActivity {
+public class TodayDateActivity extends BaseActivity {
+
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_today_date;
+    }
+
+    @Override
+    protected int getCoordinatorLayout() {
+        return R.id.todayDateLayout;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_today_date);
     }
 
     @Override

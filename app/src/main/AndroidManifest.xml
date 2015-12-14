@@ -19,15 +19,18 @@
         </activity>
         <activity
             android:name=".TodayDateActivity"
-            android:label="@string/title_activity_today_date" >
+            android:label="@string/title_activity_today_date"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
             android:name=".UpdragePreferencesActivity"
-            android:label="@string/title_activity_updrage_preferences" >
+            android:label="@string/title_activity_updrage_preferences"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
             android:name=".UpgradeLookActivity"
-            android:label="@string/title_activity_upgrade_look" >
+            android:label="@string/title_activity_upgrade_look"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
             android:name=".ProfileActivity"

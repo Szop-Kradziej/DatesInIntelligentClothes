@@ -6,12 +6,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class UpgradeLookActivity extends ActionBarActivity {
+public class UpgradeLookActivity extends BaseActivity {
+
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_upgrade_look;
+    }
+
+    @Override
+    protected int getCoordinatorLayout() {
+        return R.id.upgradeLookLayout;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_upgrade_look);
     }
 
     @Override

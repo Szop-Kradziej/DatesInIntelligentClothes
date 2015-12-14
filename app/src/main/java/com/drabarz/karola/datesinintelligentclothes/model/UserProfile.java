@@ -1,8 +1,5 @@
 package com.drabarz.karola.datesinintelligentclothes.model;
 
-/**
- * Created by karola on 13.12.15.
- */
 public class UserProfile {
 
     String nickname;

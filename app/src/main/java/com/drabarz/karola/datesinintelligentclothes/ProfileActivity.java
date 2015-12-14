@@ -13,12 +13,21 @@ import com.drabarz.karola.datesinintelligentclothes.model.Location;
 import com.drabarz.karola.datesinintelligentclothes.model.UserProfile;
 
 
-public class ProfileActivity extends MainActivity {
+public class ProfileActivity extends BaseActivity {
+
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_profile;
+    }
+
+    @Override
+    protected int getCoordinatorLayout() {
+        return R.id.profileLayout;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
         fulfillEditTextWithUserData();
 
         Button profileSaveChangesButton = (Button) findViewById(R.id.profileSaveChangesButton);
@@ -53,7 +62,7 @@ public class ProfileActivity extends MainActivity {
     void profileSaveChangesButtonAction() {
         saveNewUserProfileToModel();
         saveModelOnStorage();
-        Snackbar.make(findViewById(R.id.mainLayout), R.string.changes_saved, Snackbar.LENGTH_LONG).show();
+        Snackbar.make(findViewById(R.id.profileLayout), R.string.changes_saved, Snackbar.LENGTH_LONG).show();
     }
 
     //TODO - data not saved- always on create?
